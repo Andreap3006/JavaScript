@@ -285,38 +285,38 @@ function cotizar(){
     if(aventuras === 'aventura1'){
       error.style.display= "none";
       cotizacion.style.display= "flex";
-      monto += 2000;
-        return cotizacion.innerHTML= 'Su cotización es: ' + monto
+      monto += 7000;
+        return cotizacion.innerHTML= 'Su cotización es: $' + monto
     }
     else if(aventuras === 'aventura2'){
       error.style.display= "none";
       cotizacion.style.display= "flex";
-      monto += 7500;
-        return cotizacion.innerHTML= 'Su cotización es: ' + monto
+      monto += 4500;
+        return cotizacion.innerHTML= 'Su cotización es: $' + monto
     }
     else if(aventuras === 'aventura3'){
       error.style.display= "none";
       cotizacion.style.display= "flex";
       monto += 12000;
-      return cotizacion.innerHTML= 'Su cotización es: ' + monto
+      return cotizacion.innerHTML= 'Su cotización es: $' + monto
     }
     else if(aventuras === 'aventura4'){
       error.style.display= "none";
       cotizacion.style.display= "flex";
-      monto += 3000;
-        return cotizacion.innerHTML= 'Su cotización es: ' + monto
+      monto += 5000;
+        return cotizacion.innerHTML= 'Su cotización es: $' + monto
     }
     else if(aventuras === 'aventura5'){
       error.style.display= "none";
       cotizacion.style.display= "flex";
       monto += 8000;
-        return cotizacion.innerHTML= 'Su cotización es: ' + monto
+        return cotizacion.innerHTML= 'Su cotización es: $' + monto
     }
     else if(aventuras === 'aventura6'){
       error.style.display= "none";
       cotizacion.style.display= "flex";
-      monto += 5000;
-        return cotizacion.innerHTML= 'Su cotización es: ' + monto
+      monto += 25000;
+        return cotizacion.innerHTML= 'Su cotización es: $' + monto
     }else{
         return error.innerHTML='*Debe seleccionar una aventura';
     }
