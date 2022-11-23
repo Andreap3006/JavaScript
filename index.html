@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="sin fondo.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://kit.fontawesome.com/58ed9529f3.js" crossorigin="anonymous"></script>
+  <title>Inicio</title>
+</head>
+
+<body>
+  <!--Encabezado-->
+  <header>
+    <h1><b>EXTREM</b></h1>
+    <button class="btn-menu icono-i" onclick="accion()"><i class="fa-solid fa-bars"></i></button>
+    <button class="btn-menu icono-x ocultar" onclick="accion()"><i class="fa-solid fa-x"></i></button>
+  </header>
+
+  <!--Navbar-->
+  <nav class="nav ocultar" id="nav">
+    <ul class="nav_ul">
+      <li class="nav_li"><a href="index.html" class="nav_link">Inicio</a></li>
+      <li class="nav_li"><a href="somos.html" class="nav_link">Somos</a></li>
+      <li class="nav_li no-borde"><a href="contacto.html" class="nav_link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!--Comienzo de cards-->
+    <section class="cards">
+
+      <h2><a name="extrem" href="#">Aventuras</a></h2>
+      <div class="container">
+        <!--Card 1-->
+        <div class="card extrem">
+          <img class="card-img-top" src="https://letraslibres.com/wp-content/uploads/2016/05/tiro-con-arco.jpg"
+            alt="Card image cap" height="270px">
+          <div class="card-body">
+            <h5 class="card-title">Arco y flecha</h5>
+            <div class="div-botones">
+              <button class="btn-ver" id="btn-ver1" onclick="verInfoCard()">Ver más</button>
+            </div>
+          </div>
+          <div class="triangulo" id="triangulo1"></div>
+        </div>
+
+        <!--Card 2-->
+        <div class="card extrem">
+          <img class="card-img-top" src="https://maderasyrecreo.es/wp-content/uploads/2022/08/4.png"
+            alt="Card image cap" height="270px">
+          <div class="card-body">
+            <h5 class="card-title">Muro libre</h5>
+            <button class="btn-ver" id="btn-ver2" onclick="verInfoCard2()">Ver más</button>
+          </div>
+          <div class="triangulo" id="triangulo2"></div>
+        </div>
+
+        <!--Card 3-->
+        <div class="card extrem">
+          <img class="card-img-top" src="https://web-bigbox.storage.googleapis.com:443/uploads/activity/9b89e4fb-cfe5-4806-ae96-7aa8868459a0.jpg"
+            alt="Card image cap" height="270px">
+          <div class="card-body">
+            <h5 class="card-title">Simulador de vuelo</h5>
+            <button class="btn-ver" id="btn-ver3" onclick="verInfoCard3()">Ver más</button>
+          </div>
+          <div class="triangulo" id="triangulo3"></div>
+        </div>
+
+        <div class="card information extrem desaparecer" id="rutas">
+
+          <div class="prueba" id="ruta1">
+            <img class="img-card" src="https://letraslibres.com/wp-content/uploads/2016/05/tiro-con-arco.jpg"
+              alt="Card image cap" height="270px">
+            <div class="card-content">
+              <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+              <div class="card-information-title">
+                <h3>Arco y flecha</h3>
+              </div>
+              <div class="card-information-text">
+                <p class="text-card"><b>Ubicación: </b>Palermo, CABA</p>
+                <p class="text-card"><b>Válido para: </b>1 persona</p>
+                <p class="text-card"><b>Horarios: </b>Viernes, Sábado y Domingo de 10 a 17hs</p>
+                <h4 class="subtitle-card">Descripción</h4>
+                <p class="subtitle-content">Es un deporte de precisión en el que se desarrolla una gran agudeza visual y capacidad de concentración. Este deporte es apto para todas las edades, lo que permite a personas incluso de avanzada edad, comenzar una nueva aventura con esta especialidad. Todos los materiales están incluidos, flechas, arcos, protectores, carcaj, protectores de dedos, posaarcos, dianas de tiro y sobre todo juegos de precisión de nivel básico/intermedio.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="prueba" id="ruta2">
+            <img class="img-card" src="https://maderasyrecreo.es/wp-content/uploads/2022/08/4.png"
+              alt="Card image cap" height="270px">
+            <div class="card-content">
+              <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+              <div class="card-information-title">
+                <h3>Muro libre</h3>
+              </div>
+              <div class="card-information-text">
+                <p class="text-card"><b>Ubicación: </b>Almagro, CABA</p>
+                <p class="text-card"><b>Válido para: </b>1 persona</p>
+                <p class="text-card"><b>Horarios: </b>Lunes, Martes, Jueves y Viernes de 16 a 20hs</p>
+                <h4 class="subtitle-card">Descripción</h4>
+                <p class="subtitle-content">Es una actividad con dominancia anaeróbica, fortalece y tonifica gran cantidad de músculos de todo el cuerpo. Consiste en realizar ascensos sobre paredes, valiéndose de la fuerza física propia, la fuerza necesaria será relativa al peso del escalador, inclinación de la pared y el tamaño y la posición de las presas. Con una hora de actividad se queman entre 1,000 a 1,500 calorías. Esto equivale al doble o triple de lo que se pierde con una sesión de caminadora.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="prueba" id="ruta3">
+            <img class="img-card" src="https://web-bigbox.storage.googleapis.com:443/uploads/activity/9b89e4fb-cfe5-4806-ae96-7aa8868459a0.jpg"
+              alt="Card image cap" height="270px">
+            <div class="card-content">
+              <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+              <div class="card-information-title">
+                <h3>Simulador de vuelo</h3>
+              </div>
+              <div class="card-information-text">
+                <p class="text-card"><b>Ubicación: </b>San Fernando, Provincia de Bs.As.</p>
+                <p class="text-card"><b>Válido para: </b>1 persona</p>
+                <p class="text-card"><b>Horarios: </b>Viernes, Sábado y Domingo de 14 a 19hs</p>
+                <h4 class="subtitle-card">Descripción</h4>
+                <p class="subtitle-content">Disfruta de volar sin peligro como un piloto comercial por un día. Aprendé cómo se prepara una cabina, despegá y aterrizá el avión vos mismo en un simulador certificado. Vos sos el comandante de la aeronave! Apto para personas de 14 a 99 años que gozen de buena salud física (max 95 kg de peso).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Card 4-->
+        <div class="card extrem">
+          <img class="card-img-top" src="https://media.istockphoto.com/id/1217641434/vector/escape-room-violet-word-concepts-banner-solving-problems-mysteries-presentation-website.jpg?s=612x612&w=0&k=20&c=DcLEIvAvcORk0JbKw51-25XdC0lJTjxoSALXIfWpIto="
+            alt="Card image cap" height="270px">
+          <div class="card-body">
+            <h5 class="card-title">Escape room</h5>
+            <button class="btn-ver" id="btn-ver4" onclick="verInfoCard4()">Ver más</button>
+          </div>
+          <div class="triangulo2" id="triangulo4"></div>
+        </div>
+
+        <!--Card 5-->
+        <div class="card extrem">
+          <img class="card-img-top" src="https://www.tortugasopenmall.com/storage/comercio/frente/1622554317_1813840554.jpg"
+            alt="Card image cap" height="270px">
+          <div class="card-body">
+            <h5 class="card-title">Alto parque</h5>
+            <button class="btn-ver" id="btn-ver5" onclick="verInfoCard5()">Ver más</button>
+          </div>
+          <div class="triangulo2" id="triangulo5"></div>
+        </div>
+
+        <!--Card 6-->
+        <div class="card extrem">
+          <img class="card-img-top" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/694284.jpg"
+            alt="Card image cap" height="270px">
+          <div class="card-body">
+            <h5 class="card-title">El bosque</h5>
+            <button class="btn-ver" id="btn-ver6" onclick="verInfoCard6()">Ver más</a></button>
+          </div>
+          <div class="triangulo2" id="triangulo6"></div>
+        </div>
+      
+
+        <div class="card information extrem desaparecer" id="rutas2">
+          <div class="prueba" id="ruta4">
+            <img class="img-card" src="https://media.istockphoto.com/id/1217641434/vector/escape-room-violet-word-concepts-banner-solving-problems-mysteries-presentation-website.jpg?s=612x612&w=0&k=20&c=DcLEIvAvcORk0JbKw51-25XdC0lJTjxoSALXIfWpIto="
+              alt="Card image cap" height="270px">
+            <div class="card-content">
+              <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+              <div class="card-information-title">
+                <h3>Escape room</h3>
+              </div>
+              <div class="card-information-text">
+                <p class="text-card"><b>Ubicación: </b>Caballito, CABA</p>
+                <p class="text-card"><b>Válido para: </b>2 personas</p>
+                <p class="text-card"><b>Horarios: </b>Todos los días de 10 a 22hs</p>
+                <h4 class="subtitle-card">Descripción</h4>
+                <p class="subtitle-content">Desconectate del mundo para ingresar a una sala con acertijos que deberás resolver en tiempo real. ¿Podrán escapar apostando al trabajo en equipo, lógica e intuición?, la única salida es pensar. Nuestras salas están diseñadas para que puedan ser disfrutadas por personas de todas las edades. Pero, por razones de seguridad, en cada grupo debe haber un integrante mayor de 18 años.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="prueba" id="ruta5">
+            <img class="img-card" src="https://www.tortugasopenmall.com/storage/comercio/frente/1622554317_1813840554.jpg"
+              alt="Card image cap" height="270px">
+            <div class="card-content">
+              <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+              <div class="card-information-title">
+                <h3>Alto parque</h3>
+              </div>
+              <div class="card-information-text">
+                <p class="text-card"><b>Ubicación: </b>Tortuguitas, Provincia de Buenos Aires</p>
+                <p class="text-card"><b>Válido para: </b>2 personas</p>
+                <p class="text-card"><b>Horarios: </b>Todos los días de 10 a 17hs</p>
+                <h4 class="subtitle-card">Descripción</h4>
+                <p class="subtitle-content">Primer parque en altura ubicado dentro de un shopping que ofrece una experiencia única. Palestras temáticas para escalar, circuito de 60 juegos colgantes, caída libre adaptada para niños y actividades lúdicas experimentales. Además, contamos con cafetería, espacio para eventos y todas las comodidades para una tarde de diversión.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="prueba" id="ruta6">
+            <img class="img-card" src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/694284.jpg"
+              alt="Card image cap" height="270px">
+            <div class="card-content">
+              <div class="btn-cerrar"><button id="btn-cerrar" onclick="cerrar()"><b>X</b></button></div>
+              <div class="card-information-title">
+                <h3>El bosque</h3>
+              </div>
+              <div class="card-information-text">
+                <p class="text-card"><b>Autor: </b>Esther Sanz</p>
+                <p class="text-card"><b>Válido para: </b>320</p>
+                <p class="text-card"><b>Horarios: </b>2022</p>
+                <h4 class="subtitle-card">Descripción</h4>
+                <p class="subtitle-content">La vida de Clara, una adolescente de diecisiete años, cambia de un momento a otro al morir su abuela. Sin otros familiares cercanos, debe dejar Barcelona y mudarse a Colmenar, un pequeño pueblo donde reside el único pariente vivo que le queda: su tío Álvaro. Lejos de su casa y de sus amigos, deberá adaptarse a un nuevo sitio en el que siente una presencia extraña y oye ruidos escalofriantes por la noche.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-cotizador">
+      <div class="cotizador">
+        <div class="tiltle-cotizador" id="tiltle-cotizador"><h3>Cotizador de aventuras</h3></div>
+        <div class="content-cotizador">
+          <p>Seleccione las aventuras a realizar</p>
+          <div class="radio-cotizador">
+            <input type="radio" name="aventuras" id="Aventuras" value="aventura1">
+            <label for="aventura1" class="label-radio">Aventura 1</label>
+          </div>
+          <div class="radio-cotizador">
+            <input type="radio" name="aventuras" id="Aventuras" value="aventura2">
+            <label for="aventura1" class="label-radio">Aventura 2</label>
+          </div>
+          <div class="radio-cotizador">
+            <input type="radio" name="aventuras" id="Aventuras" value="aventura3">
+            <label for="aventura1" class="label-radio">Aventura 3</label>
+          </div>
+          <div class="radio-cotizador">
+            <input type="radio" name="aventuras" id="Aventuras" value="aventura4">
+            <label for="aventura4" class="label-radio">Aventura 4</label>
+          </div>
+          <div class="radio-cotizador">
+            <input type="radio" name="aventuras" id="Aventuras" value="aventura5">
+            <label for="aventura1" class="label-radio">Aventura 5</label>
+          </div>
+          <div class="radio-cotizador">
+            <input type="radio" name="aventuras" id="Aventuras" value="aventura6">
+            <label for="aventura1" class="label-radio">Aventura 6</label>
+          </div>
+          <div class="error-cotizador" id="error-cotizador"></div>
+          <div class="btn-cotizador">
+            <button type="submit" class="btn-enviar-cotizador" onclick="cotizar()">Enviar</button>
+          </div>
+          <div class="cotizacion" id="cotizacion"></div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!--Footer-->
+  <footer class="footer">
+    <p>Copyright ©<strong id="logo">Aventura</strong></p>
+    <div class="container-footer-icon">
+      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </footer>
+  
+  <script src="index.js"></script>
+</body>
+
+</html>

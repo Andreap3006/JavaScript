@@ -1,0 +1,1297 @@
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    margin-top: 0.8rem;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Wallpoet';
+}
+
+
+header .btn-menu {
+    visibility: hidden;
+    position: absolute;
+}
+
+
+.nav {
+    display: inline-block;
+    background-color: #95b6c4;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+}
+  
+.nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.nav_ul li a {
+    padding: 1.2rem;
+    color: black;
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.nav_ul li .nav_link:hover {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+#title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0 0 0;
+    background-color: #95b6c4;
+    padding: 1.1rem;
+    font-size: 1.2rem;
+}
+
+.footer p strong {
+    margin-left: 0.8rem;
+}
+
+.container-footer-icon {
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+
+.container-footer-icon a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 1rem;
+}
+
+.container-footer-icon a:hover {
+    color: #fff;
+}
+
+
+/*---------------------------------------------------------------Inicio-----------------------------------------------------------------------*/
+
+h2 {
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.3rem;
+    font-weight: bold;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9dS1JKXBJfE-cuB-rmF0-kJcYwcuj-DU7XA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h2:hover {
+    animation: aventura 2s ease-out;
+}
+
+@keyframes aventura {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(2deg)
+    }
+
+    50% {
+        transform: rotate(-3deg)
+    }
+
+    75% {
+        transform: rotate(2deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+h2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.cards {
+    margin: 2rem 13rem;
+}
+
+.container {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.25);
+    width: 17rem;
+    border: 1px solid #777474;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    cursor: pointer;
+
+}
+
+.card:hover {
+    box-shadow: 0rem 0rem 0.7rem rgba(33, 142, 231, 0.5);
+    transform: scale(1.1, 1.1);
+}
+
+.information:hover{
+    transform: scale(1.0, 1.0);
+}
+
+.card-img-top {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    overflow: hidden;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 2rem;
+    margin: 0;
+    padding: 0.7rem 0 0 0;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    padding: 0.3rem 0 1.5rem 0;
+    margin: 0;
+}
+
+.btn-ver {
+    padding: 0.6rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #0d6efd;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    width: 5rem;
+    box-shadow: 0.15rem 0.2rem 0.1rem rgba(0, 0, 0, 0.25);
+    outline: none;
+    border: none;
+}
+
+
+
+.btn-ver:hover{
+    background-color: rgb(11, 94, 215);
+}
+
+
+/*Información Cards*/
+
+.extrem:nth-child(4),
+.extrem:nth-child(8) {
+    grid-column-start: span 3;
+}
+
+.information {
+    width: 95%;
+    padding: 2rem;
+    z-index: 10;
+    height: 23.3rem;
+}
+
+.desaparecer {
+    display: none;
+}
+
+
+.prueba {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.img-card {
+    width: 16rem;
+    height: 19rem;
+    margin: 0.1rem 2rem 0 0;
+    border-radius: 0.5rem;
+}
+
+.card-content {
+    width: 100%;
+}
+
+.btn-cerrar button {
+    float: right;
+    position: relative;
+    top: -1.2rem;
+    left: 1.2rem;
+    font-size: 1.3rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background-color: #fff;
+    border: none;
+}
+
+.card-information-title {
+    font-size: 1.3rem;
+    height: 2.5rem;
+    background-color: rgba(33, 142, 231, 0.3);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 93%;
+    position: relative;
+    top: -0.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-card {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle-card {
+    font-size: 1.1rem;
+    margin: 0.8rem 0;
+    color: #3497d0ea;
+}
+
+.subtitle-content {
+    font-size: 1rem;
+    width: 94%;
+    margin-left: 2rem;
+    padding-right: 1rem;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+
+.parrafo2 {
+    margin-top: 1rem;
+}
+
+
+.triangulo,
+.triangulo2,
+.triangulo3,
+.triangulo4,
+.triangulo5,
+.triangulo6 {
+    border-top: 2rem solid rgba(0, 0, 0, 0.25);
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    width: 0;
+    height: 0;
+    position: relative;
+    display: none;
+    top: 6.5rem;
+}
+
+#triangulo1,
+#triangulo4{
+    right: 3rem;
+}
+
+#triangulo2 {
+    right: 1rem;
+}
+
+#triangulo3 {
+    right: 4.3rem;
+}
+
+#triangulo5 {
+    right: 4rem;
+}
+
+#triangulo6{
+    left: 1rem;
+}
+
+#ruta5,
+#ruta6{
+    display: none;
+}
+
+/*-------------------Cotizador--------------------*/
+.container-cotizador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.cotizador{
+    width: 30rem;
+    box-shadow: 0rem 0.3rem 0.5rem rgba(119, 117, 117, 0.25);
+    border-radius: 0.5rem;
+}
+
+#tiltle-cotizador h3{
+    font-size: 2rem;
+    background-color: #0d6efd;
+    color: #fff;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    border-start-start-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.content-cotizador p{
+    font-size: 1.3rem;
+    margin: 1.5rem 0 1rem 1rem;
+}
+
+.radio-cotizador{
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    margin: 0.5rem 0 0.5rem 2.5rem;
+}
+
+input[type='radio'] {
+    transform: scale(1.3);
+    margin-right: 0.5rem;
+}
+
+.btn-cotizador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.btn-enviar-cotizador{
+    width: 90%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #0d6efd;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0.15rem 0.2rem 0.1rem rgba(0, 0, 0, 0.25);
+    outline: none;
+    border: none;
+}
+
+.btn-enviar-cotizador:hover{
+    background-color: rgb(11, 94, 215);
+}
+
+.cotizacion{
+    display: none;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    width: 90%;
+    height: 5rem;
+    background-color: #0d6dfda1;
+    border-radius: 0.3rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.error-cotizador{
+    color: #f00;
+    margin: 0.3rem 0 0rem 2.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------Contacto--------------------------------------------------------------------------*/
+/* Comienzo del formulario */
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.form {
+    padding: 1rem;
+    min-width: 30vw;
+
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0 0.6rem 0;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: #f1f1f1;
+    ;
+}
+
+.form-input::placeholder {
+    color: #898484;
+}
+
+
+.form-input:hover,
+.textarea:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 0.7rem rgba(23, 165, 247, 0.5);
+    border: 0.1rem solid rgba(23, 165, 247, 0.5);
+    transition: box-shadow 0.2s, border 0.2s, background-color 0.2s;
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+
+}
+
+.form-radio {
+    margin: 0.3rem 0 0.3rem 0;
+}
+
+.form-radio-check {
+    padding: 0.3rem;
+}
+
+input[type='radio'] {
+    transform: scale(1.3);
+    margin-right: 0.5rem;
+}
+
+.label-radio {
+    font-size: 1.1rem;
+}
+
+.label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.textarea {
+    margin: 0.7rem 0 1rem 0;
+    padding: 0.7rem;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: #f1f1f1;
+}
+
+.textarea::placeholder {
+    color: #898484;
+    font-weight: normal;
+}
+
+.form-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-borrar,
+.btn-enviar {
+    padding: 0.6em;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: blue;
+    border-radius: 8%;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(119, 117, 117, 0.25);
+    font-weight: 500;
+    border: none;
+}
+
+.btn-enviar {
+    margin-left: 0.5rem;
+}
+
+.btn-enviar:hover,
+.btn-borrar:hover {
+    opacity: 0.7;
+}
+
+/* Comienzo de la sección mapa */
+
+.mapa {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    top: 20rem;
+    right: 7rem;
+}
+
+.container-mapas {
+    margin-bottom: 4rem;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-1 {
+    border-radius: 0.5rem 0.5rem 0 0;
+    position: relative;
+    border: 0.1rem solid rgba(203, 196, 196, 0.5);
+    padding: 2rem;
+    width: 90%;
+    margin: 0 0 0 1.5rem;
+}
+
+.card-2,
+.card-3 {
+    border-left: 0.1rem solid rgba(203, 196, 196, 0.5);
+    border-bottom: 0.1rem solid rgba(203, 196, 196, 0.5);
+    border-right: 0.1rem solid rgba(203, 196, 196, 0.5);
+    padding: 2rem;
+    width: 90%;
+    margin: 0 0 0 1.5rem;
+}
+
+.card-3 {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+    background-color: #f1f1f1;
+}
+
+.card-1:active,
+.card-2:active,
+.card-3:active {
+    background-color: rgba(109, 195, 244, 0.5);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1.1rem;
+}
+
+.mapa_2,
+.mapa_3 {
+    display: none;
+}
+
+.mapa_1 {
+    z-index: 1;
+}
+
+/*---------------------------------------------------------------Somos-------------------------------------------------------------------------*/
+
+.main-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    font-size: 1.2rem;
+    margin: 2rem 10rem 0 10rem;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+.pag-contacto {
+    text-decoration: none;
+    font-style: bold;
+}
+
+.img-somos {
+    margin: 3rem 0;
+    width: 40%;
+    height: 20rem;
+    border-radius: 1%;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 20%);
+    box-shadow: 0rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5)
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1510px) {
+    .btn-cerrar button {
+        top: -1.2rem;
+        left: 1.2rem;
+    }
+
+    .card-information-title{
+        width: 92%;
+    }
+
+    .subtitle-content{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1469px) {
+    /*----------------------------------------------------------------------Inicio-----------------------------------------------------------*/
+    .card-information-title{
+        width: 92%;
+    }
+    /*Informaión cards*/
+
+    .card-information-title{
+        width: 93%;
+    }
+
+    .text-card {
+        font-size: 0.95rem;
+    }
+
+    .subtitle-content {
+        font-size: 0.95rem;
+    }
+
+    .information {
+        height: 23.3rem;
+        width: 96%;
+    }
+
+
+    .card-content {
+        bottom: 0rem;
+    }
+
+    #ruta1 .subtitle-content,
+    #ruta2 .subtitle-content,
+    #ruta4 .subtitle-content,
+    #ruta5 .subtitle-content{
+    margin-bottom: 1.1rem;
+    }
+
+}
+
+@media (max-width: 1468px) {
+
+    .btn-cerrar button {
+        top: 1.5rem;
+        left: 1.4rem;
+    }
+    
+    .card-content {
+        position: relative;
+        bottom: 2.5rem;
+    }
+}
+
+
+@media (max-width: 1427px) {
+    
+    .card-content {
+        bottom: 2.5rem;
+    }
+}
+
+
+
+@media (max-width: 1248px) {
+
+    
+
+    /*------------------------------------------------Contacto------------------------------------------------------------------*/
+    .form-container {
+        justify-content: center;
+        margin-left: 2rem;
+    }
+
+    .form {
+        width: 50vw;
+    }
+
+    .mapa {
+        position: static;
+        justify-content: center;
+    }
+
+    .container-mapas {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .mapa_1,
+    .mapa_2,
+    .mapa_3 {
+        width: 35rem;
+        margin-left: 3rem;
+    }
+
+    .container-card {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        width: 35rem;
+    }
+
+    /*------------------------------------------------------Somos-----------------------------------------------------------*/
+    .img-somos {
+        margin: 3rem 0;
+        width: 35rem;
+        height: 20rem;
+    }
+
+
+}
+
+@media (max-width: 993px) {
+
+    header {
+        display: flex;
+        background-color: #95b6c4;
+        height: 4.5rem;
+    }
+
+
+    header h1 {
+        position: relative;
+        bottom: 0.8rem;
+        width: 20rem;
+        font-size: 3.2rem;
+        align-self: center;
+    }
+
+    header .btn-menu {
+        margin-top: 0rem;
+        visibility: visible;
+        position: absolute;
+        top: 1.5rem;
+        left: 2rem;
+        font-size: 1.5rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    header .icono-x {
+        top: 1.7rem;
+        font-size: 1.2rem;
+    }
+
+    .btn-menu:hover {
+        color: #fff;
+        transition: color 0.4s ease;
+    }
+
+    .nav {
+        margin: 0;
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
+        width: 13rem;
+        background-color: rgb(235, 226, 226);
+        border-radius: 0.5rem;
+    }
+
+    .ocultar {
+        display: none;
+    }
+
+    .nav .nav_ul{
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .nav ul li a {
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .nav .nav_ul>li {
+        float: none;
+        margin: 0.5rem 0;
+        width: 13rem;
+    }
+
+
+    .nav_ul li .nav_link:hover {
+        color: #047aa9;
+        transition: all 0.4s ease;
+        background-color: #fff;
+
+    }
+
+    /*---------------------------------------------------------------Inicio--------------------------------------------------------------------*/
+
+    .cards {
+        margin: 0 5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+        justify-content: space-evenly;
+    }
+
+    /*Información card*/
+    .information {
+        height: auto;
+        width: 40rem;
+        position: absolute;
+    }
+
+    .prueba {
+        flex-direction: column;
+    }
+
+    .card-content {
+        top: 1rem;
+    }
+
+    .btn-cerrar button {
+        top: -16rem;
+        left: 1.2rem;
+    }
+
+    .img-card {
+        width: 12rem;
+        height: 15rem;
+        margin-left: 11.5rem;
+    }
+
+    .subtitle-content {
+        margin-left: 0.9rem;
+    }
+
+    .triangulo,
+    .triangulo2,
+    .triangulo3,
+    .triangulo4,
+    .triangulo5,
+    .triangulo6 {
+        border: transparent;
+    }
+
+    #rutas {
+        top: 50rem;
+    }
+
+    #rutas2 {
+        top: 76rem;
+    }
+
+    #rutas3 {
+        top: 140rem;
+    }
+
+    #rutas4 {
+        top: 168rem;
+    }
+
+    #rutas5 {
+        top: 233rem;
+    }
+
+    #rutas6 {
+        top: 261rem;
+    }
+
+    /*-----------------------------------------------------------------Somos-------------------------------------------------------------------*/
+    .text {
+        width: 75%;
+        margin: 0 10rem;
+    }
+
+    /*------------------------------------------------------------Contacto-------------------------------------------------------------------*/
+    .form {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 769px) {
+
+    /*-----------------------------------------------------------Inicio-----------------------------------------------------------------------*/
+    /*Información card*/
+
+
+    .information {
+        height: auto;
+    }
+
+    .prueba {
+        flex-direction: column;
+    }
+
+    .btn-cerrar button {
+        top: -16rem;
+        left: 1.2rem;
+    }
+
+    .img-card {
+        width: 12rem;
+        height: 15rem;
+        margin-left: 5rem;
+    }
+
+    /*------------------------------------------------------------Somos-----------------------------------------------------------------------*/
+    .img-somos {
+        margin: 3rem 0;
+        width: 20rem;
+        height: 15rem;
+    }
+
+    /*----------------------------------------------------Contacto----------------------------------------------------------------------------*/
+    .from-input {
+        width: 50rem;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        width: 30rem;
+        margin-left: 0rem;
+    }
+
+    .mapa {
+        justify-content: center;
+    }
+
+    .mapa_1,
+    .mapa_2,
+    .mapa_3 {
+        display: flex;
+        justify-content: center;
+        margin: 5rem 0em 2rem 0rem;
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .mapa_2,
+    .mapa_3 {
+        display: none;
+    }
+
+
+}
+
+@media(max-width: 769px){
+    .img-card{
+        margin-left: 11.5rem;
+    }
+}
+
+@media(max-width: 735.8px){
+    .information {
+        position: absolute;
+        width: 20rem;
+    }
+
+    .card:hover{
+        transform: scale(1.0, 1.0);
+    }
+
+    .card-information-title {
+        margin-left: 0.5rem;
+    }
+
+    .btn-cerrar button {
+        top: -19rem;
+    }
+
+    #rutas4 .card-information-title {
+        font-size: 1.2rem;
+    }
+
+    .img-card{
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    #rutas {
+        top: 50rem;
+    }
+
+    #rutas2 {
+        top: 137rem;
+    }
+
+    #rutas3 {
+        top: 232rem;
+    }
+
+    #rutas4 {
+        top: 315rem;
+    }
+
+    #rutas5 {
+        top: 406rem;
+    }
+
+    #rutas6 {
+        top: 491rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        height: 4rem;
+        width: 100%;
+    }
+
+    header i {
+        top: 1.2rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-top: 0.3rem;
+        bottom: 0.4rem;
+    }
+
+    header .icono-x {
+        top: 1.7rem;
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer p {
+        margin-bottom: 1rem;
+    }
+
+    .footer p strong {
+        margin-left: 0.8rem;
+    }
+
+    .container-footer-icon {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #title {
+        font-size: 2.5rem
+    }
+
+    /*-----------------------------------------------------------Inicio---------------------------------------------------------------------*/
+
+    .video {
+        height: 20rem !important;
+    }
+
+    .cards {
+        margin: 0 3rem;
+        padding: 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        justify-content: center;
+    }
+
+    /*Información card*/
+    .card:hover {
+        transform: scale(1.0, 1.0);
+    }
+
+    #rutas {
+        top: 46rem;
+    }
+
+    #rutas2 {
+        top: 126rem;
+    }
+
+    #rutas3 {
+        top: 223rem;
+    }
+
+    #rutas4 {
+        top: 300rem;
+    }
+
+    #rutas5 {
+        top: 400rem;
+    }
+
+    #rutas6 {
+        top: 483rem;
+    }
+
+    /*----------------------------------------------------Contacto---------------------------------------------------------------------*/
+    /*Formulario*/
+    .form-container{
+        margin-left: 0.5rem;
+    }
+    
+    .form-btn {
+        margin-left: 0rem;
+        justify-content: center;
+    }
+
+    .form {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        margin-left: 4rem;
+    }
+
+    .form-input {
+        width: 85%;
+    }
+
+    .textarea {
+        width: 82%;
+    }
+
+    /*Mpa*/
+    .mapa_1,
+    .mapa_2,
+    .mapa_3 {
+        display: flex;
+        justify-content: center;
+        margin: 5rem 0em 2rem 0rem;
+        width: 80%;
+        height: 20rem;
+    }
+
+    .mapa_2,
+    .mapa_3 {
+        display: none;
+    }
+
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        width: 80%;
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 400px){
+    /*-------------------------------------------------------------Contacto----------------------------------------------------*/
+    /*Formulario*/
+    .form {
+        padding: 0;
+        margin: 0 0 0 2rem;
+        justify-content: center;
+    }
+
+    .form-input {
+        width: 18rem;
+    }
+
+     .textarea {
+        min-width: 17rem;
+    }
+
+    .form-btn {
+        margin-left: 0rem;
+        justify-content: center;
+    }
+    /*Mapa*/
+    .mapa_1,
+    .mapa_2,
+    .mapa_3 {
+        margin: 5rem 0rem 2.5rem 0;
+        width: 17rem;
+        height: 15rem;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        min-width: 19rem;
+        margin-left: 0rem;
+        font-size: 0.9rem;
+    }
+
+    .card-title{
+        font-size: 1.1rem;
+    }
+
+    .card-text{
+        font-size: 1rem;
+    }
+
+
+}
