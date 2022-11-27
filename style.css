@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
 
-html {
+html { 
     scroll-behavior: smooth;
 }
 
@@ -238,7 +238,7 @@ h2 a {
 }
 
 
-/*Información Cards*/
+/*-------------Información Cards------------*/
 
 .extrem:nth-child(4),
 .extrem:nth-child(8) {
@@ -364,11 +364,6 @@ h2 a {
 
 #triangulo6{
     left: 1rem;
-}
-
-#ruta5,
-#ruta6{
-    display: none;
 }
 
 /*-------------------Cotizador--------------------*/
@@ -680,8 +675,8 @@ span {
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
-
-@media (max-width: 1510px) {
+@media (max-width: 1550px) {
+    /*--------------------------------Inicio-------------------------------*/
     .btn-cerrar button {
         top: -1.2rem;
         left: 1.2rem;
@@ -692,15 +687,39 @@ span {
     }
 
     .subtitle-content{
-        width: 90%;
+        width: 95%;
+    }
+
+    .card-content{
+        position: relative;
+        bottom: 0rem;
+    }
+}
+
+@media (max-width: 1510px) {
+    /*--------------------------------Inicio-------------------------------*/
+    .btn-cerrar button {
+        top: -1.2rem;
+        left: 1.2rem;
+    }
+
+    .card-information-title{
+        width: 92%;
+    }
+
+    .subtitle-content{
+        width: 95%;
+    }
+
+    .card-content{
+        position: relative;
+        bottom: 0rem;
     }
 }
 
 @media (max-width: 1469px) {
     /*----------------------------------------------------------------------Inicio-----------------------------------------------------------*/
-    .card-information-title{
-        width: 92%;
-    }
+
     /*Informaión cards*/
 
     .card-information-title{
@@ -722,7 +741,7 @@ span {
 
 
     .card-content {
-        bottom: 0rem;
+        bottom: 2.5rem;
     }
 
     #ruta1 .subtitle-content,
@@ -737,19 +756,20 @@ span {
 @media (max-width: 1468px) {
 
     .btn-cerrar button {
-        top: 1.5rem;
-        left: 1.4rem;
+        top: 1.2rem;
+        left: 1.2rem;
     }
     
     .card-content {
-        position: relative;
+        width: 100%;
         bottom: 2.5rem;
     }
 }
 
 
 @media (max-width: 1427px) {
-    
+
+    /*---Inicio-----*/
     .card-content {
         bottom: 2.5rem;
     }
@@ -758,8 +778,6 @@ span {
 
 
 @media (max-width: 1248px) {
-
-    
 
     /*------------------------------------------------Contacto------------------------------------------------------------------*/
     .form-container {
@@ -822,7 +840,7 @@ span {
 
     header h1 {
         position: relative;
-        bottom: 0.8rem;
+        bottom: 0.2rem;
         width: 20rem;
         font-size: 3.2rem;
         align-self: center;
@@ -832,7 +850,7 @@ span {
         margin-top: 0rem;
         visibility: visible;
         position: absolute;
-        top: 1.5rem;
+        top: 1.4rem;
         left: 2rem;
         font-size: 1.5rem;
         background-color: transparent;
@@ -915,12 +933,14 @@ span {
     }
 
     .card-content {
+        width: 100%;
         top: 1rem;
+        margin-left: 2rem;
     }
 
     .btn-cerrar button {
-        top: -16rem;
-        left: 1.2rem;
+        top: -16.5rem;
+        left: -0.5rem;
     }
 
     .img-card {
@@ -943,27 +963,11 @@ span {
     }
 
     #rutas {
-        top: 50rem;
+        top: 20rem;
     }
 
     #rutas2 {
-        top: 76rem;
-    }
-
-    #rutas3 {
-        top: 140rem;
-    }
-
-    #rutas4 {
-        top: 168rem;
-    }
-
-    #rutas5 {
-        top: 233rem;
-    }
-
-    #rutas6 {
-        top: 261rem;
+        top: 42rem;
     }
 
     /*-----------------------------------------------------------------Somos-------------------------------------------------------------------*/
@@ -995,8 +999,8 @@ span {
     }
 
     .btn-cerrar button {
-        top: -16rem;
-        left: 1.2rem;
+        top: -16.5rem;
+        left: -0.5rem;
     }
 
     .img-card {
@@ -1066,11 +1070,16 @@ span {
         margin-left: 0.5rem;
     }
 
-    .btn-cerrar button {
-        top: -19rem;
+    .card-content{
+        margin-left: 0rem;
     }
 
-    #rutas4 .card-information-title {
+    .btn-cerrar button {
+        top: -18.5rem;
+        left: 1.6rem;
+    }
+
+    .card-information-title {
         font-size: 1.2rem;
     }
 
@@ -1080,27 +1089,11 @@ span {
     }
 
     #rutas {
-        top: 50rem;
+        top: 25rem;
     }
 
     #rutas2 {
-        top: 137rem;
-    }
-
-    #rutas3 {
-        top: 232rem;
-    }
-
-    #rutas4 {
-        top: 315rem;
-    }
-
-    #rutas5 {
-        top: 406rem;
-    }
-
-    #rutas6 {
-        top: 491rem;
+        top: 99rem;
     }
 }
 
@@ -1173,27 +1166,11 @@ span {
     }
 
     #rutas {
-        top: 46rem;
+        top: 25rem;
     }
 
     #rutas2 {
-        top: 126rem;
-    }
-
-    #rutas3 {
-        top: 223rem;
-    }
-
-    #rutas4 {
-        top: 300rem;
-    }
-
-    #rutas5 {
-        top: 400rem;
-    }
-
-    #rutas6 {
-        top: 483rem;
+        top: 99rem;
     }
 
     /*----------------------------------------------------Contacto---------------------------------------------------------------------*/

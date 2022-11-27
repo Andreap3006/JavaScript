@@ -277,49 +277,42 @@ function cotizar(){
   
   let aventuras = document.querySelector('input[name="aventuras"]:checked').value
   let cotizacion = document.getElementById('cotizacion')
-  let error = document.getElementById('error-cotizador')
-
-  console.log(aventuras)
 
     let monto = 0
     if(aventuras === 'aventura1'){
       error.style.display= "none";
       cotizacion.style.display= "flex";
       monto += 7000;
-        return cotizacion.innerHTML= 'Su cotización es: $' + monto
+        return cotizacion.innerHTML= 'Su cotización es: $' + monto;
     }
     else if(aventuras === 'aventura2'){
       error.style.display= "none";
       cotizacion.style.display= "flex";
       monto += 4500;
-        return cotizacion.innerHTML= 'Su cotización es: $' + monto
+        return cotizacion.innerHTML= 'Su cotización es: $' + monto;
     }
     else if(aventuras === 'aventura3'){
       error.style.display= "none";
       cotizacion.style.display= "flex";
       monto += 12000;
-      return cotizacion.innerHTML= 'Su cotización es: $' + monto
+      return cotizacion.innerHTML= 'Su cotización es: $' + monto;
     }
     else if(aventuras === 'aventura4'){
       error.style.display= "none";
       cotizacion.style.display= "flex";
       monto += 5000;
-        return cotizacion.innerHTML= 'Su cotización es: $' + monto
+        return cotizacion.innerHTML= 'Su cotización es: $' + monto;
     }
     else if(aventuras === 'aventura5'){
       error.style.display= "none";
       cotizacion.style.display= "flex";
       monto += 8000;
-        return cotizacion.innerHTML= 'Su cotización es: $' + monto
+        return cotizacion.innerHTML= 'Su cotización es: $' + monto;
     }
-    else if(aventuras === 'aventura6'){
+    else{
       error.style.display= "none";
       cotizacion.style.display= "flex";
       monto += 25000;
-        return cotizacion.innerHTML= 'Su cotización es: $' + monto
-    }else{
-        return error.innerHTML='*Debe seleccionar una aventura';
+        return cotizacion.innerHTML= 'Su cotización es: $' + monto;
     }
-  
-
 }

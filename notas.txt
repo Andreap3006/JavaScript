@@ -34,4 +34,3 @@
       error.innerHTML='*Debe seleccionar una aventura';
     }
 }
-
