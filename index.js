@@ -277,6 +277,7 @@ function cotizar(){
   
   let aventuras = document.querySelector('input[name="aventuras"]:checked').value
   let cotizacion = document.getElementById('cotizacion')
+  let error = document.getElementById('error-cotizador') 
 
     let monto = 0
     if(aventuras === 'aventura1'){

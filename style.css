@@ -1109,7 +1109,7 @@ span {
 
     header h1 {
         font-size: 3rem;
-        margin-top: 0.3rem;
+        margin-top: 0.8rem;
         bottom: 0.4rem;
     }
 
@@ -1171,6 +1171,16 @@ span {
 
     #rutas2 {
         top: 99rem;
+    }
+
+    /*cotizador*/
+
+    .cotizador{
+        width: 20rem;
+    }
+
+    .tiltle-cotizador{
+        font-size: 1rem;
     }
 
     /*----------------------------------------------------Contacto---------------------------------------------------------------------*/
